@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sc_001
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 11/16/2004 2:30:35 PM
+//:://////////////////////////////////////////////
+#include "SOS_include"
+
+int StartingConditional()
+{
+    // Inspect local variables
+    if(SOS_GetPersistentInt(GetPCSpeaker(), "felix_level_1") != 2)
+        return TRUE;
+
+    return FALSE;
+}
+

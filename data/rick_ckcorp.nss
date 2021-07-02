@@ -1,0 +1,17 @@
+//::///////////////////////////////////////////////
+//:: FileName rick_corporlack
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2/5/2003 10:07:22 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+    int iHD = GetHitDice(GetPCSpeaker());
+    if ((iHD > 4) && (iHD < 7))
+       return TRUE;
+
+    return FALSE;
+}

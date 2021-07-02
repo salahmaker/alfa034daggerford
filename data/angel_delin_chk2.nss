@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName angel_delin_chk2
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 6/17/2004 1:18:44 AM
+//:://////////////////////////////////////////////
+int StartingConditional()
+{
+
+	// Restrict based on the player's alignment
+	if(GetAlignmentGoodEvil(GetPCSpeaker()) == ALIGNMENT_GOOD)
+		return FALSE;
+
+	return TRUE;
+}

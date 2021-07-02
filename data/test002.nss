@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName test002
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 11/21/2004 4:05:02 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Make sure the PC speaker has these items in their inventory
+	if(!HasItem(GetPCSpeaker(), "needtag"))
+		return FALSE;
+
+	return TRUE;
+}

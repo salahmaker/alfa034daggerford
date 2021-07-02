@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName horsecheck
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2/18/2007 7:46:46 PM
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_MEDIUM, SKILL_PERSUADE, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
+}

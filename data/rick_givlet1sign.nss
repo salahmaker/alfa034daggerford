@@ -1,0 +1,16 @@
+//::///////////////////////////////////////////////
+//:: FileName rick_giveletter2signed
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 2/5/2003 10:10:53 PM
+//:://////////////////////////////////////////////
+
+#include "nw_i0_tool"
+#include "subraces"
+
+void main()
+{
+    // Give the speaker a militia note
+    CreateItemOnObject("letteroftesting2", GetPCSpeaker(), 1);
+}

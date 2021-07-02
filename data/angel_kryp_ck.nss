@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName angel_kryp_ck
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 8/8/2004 1:31:03 AM
+//:://////////////////////////////////////////////
+#include "sos_include"
+
+int StartingConditional()
+{
+
+    // Inspect local variables
+    if(SOS_GetPersistentInt(GetPCSpeaker(), "KryptgardeBooks") == 0)
+        return FALSE;
+
+    return TRUE;
+}
